@@ -1,0 +1,49 @@
+.last__section {
+  min-height: 100vh;
+  padding: 10% 18%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.portrait {
+  height: 80vh;
+}
+
+.photo__title {
+  font-size: var(--fsize-large);
+}
+
+.photo__subtitle {
+  font-size: var(--fsize-xxlarge);
+  width: 60%;
+  line-height: 5rem;
+}
+
+.phone__video {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  z-index: 2;
+  transform: translate(-40%, 0);
+}
+
+.phone__video img,
+.phone__video video {
+  position: absolute;
+}
+
+.phone__video img {
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  transform: scale(0.8);
+}
+
+.phone__video video {
+  left: 1rem;
+  bottom: 1rem;
+  transform: scale(0.82);
+  z-index: 1;
+  border-radius: 2.5rem;
+}
