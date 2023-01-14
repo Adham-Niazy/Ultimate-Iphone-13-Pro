@@ -1,0 +1,39 @@
+/* Navigation STYLING */
+nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 18%;
+  min-height: 8vh;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+nav, a {
+  text-decoration: none;
+  color: black;
+  font-size: var(--fsize-small);
+}
+
+.nav__links a,
+.nav__links button {
+  margin-left: 1.5rem;
+}
+
+.nav__links .cta__btn {
+  padding: 0.2rem 1rem;
+  font-size: var(--fsize-small);
+  background-color: var(--cta-button-color);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: var(--fsize-medium);
+  font-weight: bold;
+}

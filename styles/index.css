@@ -1,0 +1,6 @@
+/* Bases Styling */
+@import url(base/base.css);
+
+/* Components Styling */
+@import url(components/navigation.css);
+@import url(components/heroIntro.css);

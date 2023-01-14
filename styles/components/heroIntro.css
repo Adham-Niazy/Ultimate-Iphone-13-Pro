@@ -1,0 +1,34 @@
+/* HERO SECTION INTRO STYLING */
+.hero__page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__page-content {
+  width: 45%;
+  z-index: 2;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+.hero__page-title {
+  font-size: var(--fsize-medium);
+}
+
+.hero__page-desc {
+  font-weight: normal;
+  font-size: var(--fsize-medium);
+}
+
+.hero__page-subtitle {
+  font-size: var(--fsize-xxlarge);
+  margin-bottom: 1rem;
+}
+
+.hero__page .intro__video {
+  position: absolute;
+  width: 100%;
+}

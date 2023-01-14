@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-import './style.css';
+import './styles/index.css';
 
 gsap.registerPlugin(ScrollTrigger); 
