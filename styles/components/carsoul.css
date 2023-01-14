@@ -1,0 +1,53 @@
+/* Carousel__page Styling */
+.carousel__page {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+.purchase__left {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  flex: 1;
+}
+.phone__gallery {
+  display: flex;
+  align-self: flex-start;
+}
+.phone__gallery img {
+  transform: scale(0.8);
+  transform-origin: bottom;
+}
+.phone__gallery-container {
+  min-width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swatch__container {
+  text-align: center;
+  margin: 2rem 0;
+}
+.swatch__container span {
+  font-size: var(--fsize-small);
+}
+.swatches img {
+  padding: 0.5rem 0.3rem;
+  cursor: pointer;
+}
+/* Purchase right */
+.purchase__right {
+  flex: 1;
+  position: relative;
+  background: black;
+}
+.purchase__right img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%) scale(0.8);
+  transform-origin: bottom;
+}
