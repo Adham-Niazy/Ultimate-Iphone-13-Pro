@@ -22,7 +22,7 @@ const smokeSectionTimeline = gsap.timeline({
     trigger: '.smoke__page',
     scrub: true,
     start: "-40%",
-    end: "50%"
+    end: "40%"
   }
 });
 
@@ -43,7 +43,7 @@ const smokeSectionTimelineRemove = gsap.timeline({
     trigger: '.smoke__page',
     scrub: true,
     start: "-20%",
-    end: "70%"
+    end: "60%"
   }
 });
 
@@ -54,3 +54,28 @@ smokeSectionTimelineRemove.to(
     stagger: 1
   }
 )
+
+// phone split page Animation
+const phoneSplitSectionTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.phone-split__page',
+    start: '-55%',
+    end: '20%',
+    scrub: true
+  }
+});
+
+phoneSplitSectionTimeline.fromTo('.large-phone', { x: '40%' }, { x: '20%' });
+phoneSplitSectionTimeline.fromTo('.small-phone', { x: '-40%' }, { x: '-20%' }, "<");
+phoneSplitSectionTimeline.fromTo('.product__text-left', { x: 50, opacity: 0 }, { x: 0, opacity: 1 }, "<");
+phoneSplitSectionTimeline.fromTo('.product__text-right', { x: -50, opacity: 0 }, { x: 0, opacity: 1 }, "<");
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: ".phone-split__page",
+    pin: true,
+    pinSpacing: false,
+    start: "0%",
+    end: "100%",
+  },
+});

@@ -5,10 +5,11 @@
 
 .product__container-text {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 100vh;
   background-color: white;
+  padding: 0 8rem;
 }
 
 .phone__size {
