@@ -118,3 +118,17 @@ const VideoTimeline = gsap.timeline({
 
 VideoTimeline.fromTo('.product-info__video', { currentTime: 0 }, { currentTime: 3, duration: 1 });
 VideoTimeline.fromTo('.product-info__container h3', { opacity: 0 }, { opacity: 1, stagger: 0.25, duration: 0.5 }, "<");
+
+// Parallax Effect on Last Section
+const ParallaxTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.last__section',
+    start: '-25%',
+    end: '50%',
+    scrub: true
+  }
+});
+
+ParallaxTimeline.fromTo('.photo__description', { y: 0 }, { y: -80 });
+// ParallaxTimeline.fromTo('.portrait__container', { y: 0 }, { y: -80 }, "<");
+ParallaxTimeline.fromTo('.phone__video', { y: 0 }, { y: -150 }, "<");
