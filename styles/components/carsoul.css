@@ -38,6 +38,9 @@
   padding: 0.5rem 0.3rem;
   cursor: pointer;
 }
+.blue {
+  z-index: 1;
+}
 /* Purchase right */
 .purchase__right {
   flex: 1;

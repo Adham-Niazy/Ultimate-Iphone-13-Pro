@@ -79,3 +79,28 @@ gsap.timeline({
     end: "100%",
   },
 });
+
+// Carsoul
+const swatches = document.querySelectorAll('.swatches img');
+const gallery = document.querySelector('.phone__gallery');
+const slides = document.querySelectorAll('.phone__gallery-container');
+
+let currentSwatch = 'blue';
+let topIndex = 2;
+
+swatches.forEach((swatch, idx) => {
+  const coord = slides[idx]?.getBoundingClientRect()?.left;
+
+  swatch.addEventListener('click', (e) => {
+    let swatchName = e.target.getAttribute('swatch');
+    if ( swatchName === currentSwatch ) return;
+    currentSwatch = swatchName;
+    let closeUp = document.querySelector('.' + swatchName);
+
+    gsap.set(closeUp, { zIndex: topIndex })
+    gsap.fromTo(closeUp, { opacity: 0 }, { opacity: 1, duration: 1 });
+
+    gsap.to(gallery, { x: -coord, duration: 1, ease: "back.out(1)" });
+    topIndex++;
+  })
+})
