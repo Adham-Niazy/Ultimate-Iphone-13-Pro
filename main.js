@@ -103,4 +103,18 @@ swatches.forEach((swatch, idx) => {
     gsap.to(gallery, { x: -coord, duration: 1, ease: "back.out(1)" });
     topIndex++;
   })
-})
+});
+
+// Video Scroll Animation (PRODUCT INFO SECTION)
+const VideoTimeline = gsap.timeline({ 
+  scrollTrigger: {
+    trigger: '.product-info__page',
+    start: '0%',
+    end: '150%',
+    scrub: true,
+    pin: true
+  }
+});
+
+VideoTimeline.fromTo('.product-info__video', { currentTime: 0 }, { currentTime: 3, duration: 1 });
+VideoTimeline.fromTo('.product-info__container h3', { opacity: 0 }, { opacity: 1, stagger: 0.25, duration: 0.5 }, "<");
