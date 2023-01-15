@@ -24,3 +24,16 @@
   font-weight: bold;
   z-index: 2;
 }
+
+@media screen and (max-width: 1440px) {
+  .smoke__content {
+    padding: 5% 25%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .smoke__content {
+    padding: 5% 20%;
+    font-size: 2.7rem;
+  }
+}
