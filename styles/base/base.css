@@ -22,3 +22,29 @@ h3,
 h4 {
   color: var(--text-color);
 }
+
+.responsive__overlay {
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  .responsive__overlay {
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .responsive__overlay h3 {
+    width: 40%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--text-color);
+  }
+}
